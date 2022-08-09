@@ -1,0 +1,51 @@
+name: dscapston
+
+channels:
+- pkgs/main
+ 
+dependencies:
+- python=3.8
+
+# 필요 프레임워크와 라이브러리
+- tensorflow # 텐서플로
+- keras # 케라스
+- gensim # 젠심
+- scikit-learn # 사이킷런
+- jupyterlab # 주피터랩
+
+# 자연어 처리를 위한 nltk와 konlpy 설치
+- nltk # NLTK
+# nltk.download()
+
+- konlpy # 코엔엘파이(윈도우에서 에러 발생)
+#윈도우에서 KoNLPy를 설치하거나 실행 시 JDK 관련 오류나 JPype
+#오류에 부딪히는 경우가 있습니다. 이는 KoNLPy가 JAVA로 구성되어
+#있기 때문인데 오류 해결을 위해서는 JDK 1.7 이상의 버전과 JPype가
+#설치되어 있어야 합니다.
+
+# JDK 설치
+# https://www.oracle.com/technetwork/java/javase/downloads/index.html
+# 경로 확인 : C:\Program Files\Java\jdk-11.0.1
+# JDK 환경 변수 설정
+
+# JPype 설치
+# https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype
+# conda install JPype1
+# 위 명령어로도 가능한듯 싶다.
+# 모두 설치 후
+# pip install konlpy
+# konlpy는 conda로 패키지 설치가 불가능 하다.
+
+- pandas
+- numpy
+- matplotlib
+- requests
+- beautifulsoup4
+- selenium
+
+
+# RTX3060 환경세팅(Mac bootcamp)
+# 홈페이지에서 받을것
+# CUDA 11.3
+# Pytorch 1.11.0 Stable Version
+# cuDNN 8.3 for CUDA11.5
