@@ -22,6 +22,7 @@
 2) 모델 별 성능 비교 분석
 
 ### 나. 최종결과물의 세부내용 및 구성
+![image](https://github.com/inseok-lee/Data-Analysis-Capstone-Design/assets/92963189/bd7c60e8-fc31-444d-8d6b-d007f0f85a0a)
 
 1) LSTM
  Long Short-Term Memory, 전통적인 RNN의 단점(장기 의존성 문제)을 보완하기 위해 게이트 개념을 추가한 방식이다. 은닉층의 메모리셀에 입력 게이트, 망각 게이트, 출력 게이트를 추가하여 불필요한 기억 지우고 기억해야 할 것들을 결정한다. 긴 시퀀스의 입력을 처리하는데 탁월한 성능을 보이며 셀 상태 정보를 가지고 있다.
